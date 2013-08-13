@@ -49,7 +49,7 @@
               index=0;
             }
             else;// console.log('trigger click next track');
-            tracks[index].click();
+            trackSelect(tracks[index]);
 
         });// on ended
     }
