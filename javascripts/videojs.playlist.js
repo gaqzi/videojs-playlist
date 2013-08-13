@@ -94,9 +94,10 @@
 
         //remove 'currentTrack' CSS class
         for(var i=0; i<trackCount; i++){
-            if(tracks[i].classList.contains('currentTrack')){
-                tracks[i].className=tracks[i].className.replace(/\bcurrentTrack\b/,'nonPlayingTrack');
-            }
+          $(tracks[i]).removeClass('currentTrack').addClass('nonPlayingTrack');
+            // if(tracks[i].classList.contains('currentTrack')){
+            //     tracks[i].className=tracks[i].className.replace(/\bcurrentTrack\b/,'nonPlayingTrack');
+            // }
         }
         //add 'currentTrack' CSS class
         track.className = track.className + " currentTrack";
